@@ -1,14 +1,89 @@
-*,
-*::before,
-*::after {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 
-html,
 body {
-	font-family: 'Outfit', sans-serif;
-	background-color: #131334;
-	color: #ebebeb;
+  font-family: Georgia, 'Times New Roman', serif;
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 20px;
+  color: #f5e6c8;
+  background: #14301f;
+}
+
+h1, h2 {
+  text-align: center;
+  color: #f2b632;
+}
+
+h1 {
+  letter-spacing: 6px;
+  text-transform: uppercase;
+}
+
+.ultimo {
+  text-align: center;
+  margin: 30px auto;
+  width: 220px;
+  padding: 20px;
+  border: 4px solid #f2b632;
+  border-radius: 20px;
+  background: #0d2016;
+}
+
+.ultimo p {
+  margin: 0;
+}
+
+#ultimo-numero {
+  font-size: 5rem;
+  font-weight: bold;
+  color: #f2b632;
+  display: block;
+}
+
+.comandi {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.comandi button {
+  padding: 12px 24px;
+  margin: 0 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-family: inherit;
+  color: #14301f;
+  background: #f2b632;
+  border: none;
+  border-radius: 30px;
+}
+
+.comandi button:hover {
+  background: #f5e6c8;
+}
+
+#cronologia {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.tabellone {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 6px;
+  margin: 20px 0;
+}
+
+.numero {
+  padding: 12px 0;
+  background: #1f4a31;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.numero.uscito {
+  background: #c8352b;
+  color: #ffffff;
+  font-weight: bold;
 }
